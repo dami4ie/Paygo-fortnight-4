@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState, useEffect } from "react"
@@ -27,8 +28,8 @@ export default function GroupsPage() {
   }
 
   const handleJoinTelegram = () => {
-    window.open("")
-  
+    window.open("", "_blank")
+  }
 
   if (!userData) {
     return <div className="p-6 text-center">Loading...</div>
@@ -46,8 +47,12 @@ export default function GroupsPage() {
 
       <div className="p-4 space-y-6">
         <div className="text-center mb-6">
-          <h2 className="text-xl font-bold text-purple-800 mb-2">Connect With Us</h2>
-          <p className="text-gray-600 text-sm">Join our official channels for updates and support</p>
+          <h2 className="text-xl font-bold text-purple-800 mb-2">
+            Connect With Us
+          </h2>
+          <p className="text-gray-600 text-sm">
+            Join our official channels for updates and support
+          </p>
         </div>
 
         {/* WhatsApp Channel */}
